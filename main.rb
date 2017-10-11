@@ -7,5 +7,4 @@ open('readme.md', 'a') do |f|
     f.puts "- #{formatted}"
 end
 
-exec('git commit -am "update readme at:' + formatted + '"')
-exec('git push origin master')
+exec('git commit -am "update readme at:' + formatted + '" && git push origin master')
